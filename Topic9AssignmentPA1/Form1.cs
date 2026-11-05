@@ -16,5 +16,21 @@ namespace Topic9AssignmentPA1
         {
             InitializeComponent();
         }
+
+        private void btnGood_Click(object sender, EventArgs e)
+        {
+            btnBad.Enabled = false;
+            btnGood.Enabled = false;
+            btnBad.Visible = false;
+            BackColor = Color.DarkGreen;
+        }
+
+        private void btnBad_Click(object sender, EventArgs e)
+        {
+            btnGood.Enabled = false;
+            btnBad.Enabled = false;
+            btnGood.Visible = false;
+            BackColor = Color.DarkRed;
+        }
     }
 }
