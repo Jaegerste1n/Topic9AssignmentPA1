@@ -28,10 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.btnGood = new System.Windows.Forms.Button();
             this.btnBad = new System.Windows.Forms.Button();
-            this.picTure = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picTure)).BeginInit();
+            this.picDoor = new System.Windows.Forms.PictureBox();
+            this.picBaddoor = new System.Windows.Forms.PictureBox();
+            this.picGooddoor = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaddoor)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGooddoor)).BeginInit();
             this.SuspendLayout();
             // 
             // btnGood
@@ -58,25 +63,53 @@
             this.btnBad.UseVisualStyleBackColor = false;
             this.btnBad.Click += new System.EventHandler(this.btnBad_Click);
             // 
-            // picTure
+            // picDoor
             // 
-            this.picTure.Location = new System.Drawing.Point(350, 125);
-            this.picTure.Name = "picTure";
-            this.picTure.Size = new System.Drawing.Size(100, 141);
-            this.picTure.TabIndex = 2;
-            this.picTure.TabStop = false;
+            this.picDoor.Image = ((System.Drawing.Image)(resources.GetObject("picDoor.Image")));
+            this.picDoor.Location = new System.Drawing.Point(351, 88);
+            this.picDoor.Name = "picDoor";
+            this.picDoor.Size = new System.Drawing.Size(100, 206);
+            this.picDoor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picDoor.TabIndex = 2;
+            this.picDoor.TabStop = false;
+            // 
+            // picBaddoor
+            // 
+            this.picBaddoor.Image = ((System.Drawing.Image)(resources.GetObject("picBaddoor.Image")));
+            this.picBaddoor.Location = new System.Drawing.Point(274, 51);
+            this.picBaddoor.Name = "picBaddoor";
+            this.picBaddoor.Size = new System.Drawing.Size(255, 243);
+            this.picBaddoor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.picBaddoor.TabIndex = 3;
+            this.picBaddoor.TabStop = false;
+            this.picBaddoor.Visible = false;
+            // 
+            // picGooddoor
+            // 
+            this.picGooddoor.Image = ((System.Drawing.Image)(resources.GetObject("picGooddoor.Image")));
+            this.picGooddoor.Location = new System.Drawing.Point(309, 40);
+            this.picGooddoor.Name = "picGooddoor";
+            this.picGooddoor.Size = new System.Drawing.Size(190, 294);
+            this.picGooddoor.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGooddoor.TabIndex = 4;
+            this.picGooddoor.TabStop = false;
+            this.picGooddoor.Visible = false;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.picTure);
+            this.Controls.Add(this.picGooddoor);
+            this.Controls.Add(this.picBaddoor);
+            this.Controls.Add(this.picDoor);
             this.Controls.Add(this.btnBad);
             this.Controls.Add(this.btnGood);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.picTure)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picDoor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBaddoor)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picGooddoor)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -85,7 +118,9 @@
 
         private System.Windows.Forms.Button btnGood;
         private System.Windows.Forms.Button btnBad;
-        private System.Windows.Forms.PictureBox picTure;
+        private System.Windows.Forms.PictureBox picDoor;
+        private System.Windows.Forms.PictureBox picBaddoor;
+        private System.Windows.Forms.PictureBox picGooddoor;
     }
 }
 
